@@ -1,16 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
-    <div style="color: green;">{{ msg }}</div>
-    <h1>Hi {{session.username}}!!</br></br> Welcome to the index page... {{ session.email }}</h1>
+{% extends 'base.html' %}
 
-    <a href="{{ url_for('logout') }}">Logout</a>
-</body>
-</html>
+{% block content %}
+
+    <div class="shadow-lg mt-5 ml card form-container">
+    <div class="msg">{{ msg }}</div>
+    <p class="ms-3">Hi {{session.username}}!!<br><br> Welcome to the home page...</p>
+    <p class="ms-3">Your username is {{ session.username }}</p>
+    <p class="ms-3">Your email is {{ session.email }}</p>
+
+    <a class="ms-3" href="{{ url_for('logout') }}">Logout</a>
+    </div>
+
+{% endblock content %}

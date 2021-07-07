@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CRUD APP </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/bootstrap.min.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">My App</span>
+        </div>
+      </nav>
+
+    <div class="container-fluid" >
+        {% block content %}
+        
+        {% endblock content %}
+    </div>
+
+   <footer>
+       <div>
+           <p> Copyright 2021 &copy CODEPLATEAU 2.0</p>
+       </div>
+   </footer>
+</body>
+</html>

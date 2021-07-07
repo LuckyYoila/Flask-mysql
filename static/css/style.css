@@ -1,0 +1,62 @@
+body {
+    background-image: linear-gradient(120deg, rgb(20, 56, 155), rgb(176, 176, 253), rgb(71, 61, 211));
+    background-repeat: no-repeat;
+    height: 42.5rem;
+    background-position: center;
+    background-size: cover; 
+}
+
+.card {
+    width: 30%;
+    height: 30rem;
+    background-color: rgba(227, 227, 243, 0.753) !important;
+}
+
+.ml {
+    margin-left: 35%;
+}
+.form-container {
+    background-color: rgba(227, 227, 243, 0.753);
+    width: 25%;
+    height: 70vh;
+    border-radius: 30px;
+    border: none;
+}
+
+input[type=text], input[type=submit], input[type=email], input[type=password] {
+    border-radius: 5px;
+    width: 80%;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-left: 15px;
+    display: inline-block;
+    border: 0px;
+}
+
+input[type=text]:hover, input[type=email]:hover, input[type=password]:hover, input[type=submit]:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+input[type=text]:active, input[type=email]:active, input[type=password]:active{
+    border: none;
+}
+
+footer {
+    width: 90%;
+    position:absolute;
+    bottom: 0px;
+}
+
+footer div {
+        color: rgb(241, 241, 241);
+        text-align: center;
+}
+
+.msg {
+    color: brown;
+}
+
+html {
+    height: 100%;
+}
